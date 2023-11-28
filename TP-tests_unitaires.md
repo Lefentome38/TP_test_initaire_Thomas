@@ -26,7 +26,7 @@ ajouter un script dans le package.json :
 
 ## Exercice 1
 
-Ajouter des tests unitaires sur la fonction `additionner` du fichier `__tests__/additionner.ts`.
+[] Ajouter des tests unitaires sur la fonction `additionner` du fichier `__tests__/additionner.ts`.
 
 ## Exercice 2
 
