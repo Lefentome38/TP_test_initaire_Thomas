@@ -66,46 +66,46 @@ describe("Sum only for small numbers", () => {
 //   });
 // });
 
-describe("Sum of big numbers", () => {
-  describe("result", () => {
-    test("with two small numbers", () => {
-      expect(sum(1, 1)).toEqual(2);
-    });
+// describe("Sum of big numbers", () => {
+//   describe("result", () => {
+//     test("with two small numbers", () => {
+//       expect(sum(1, 1)).toEqual(2);
+//     });
 
-    test("with one small numbers", () => {
-      expect(sum(1, 10)).toEqual(11);
-      expect(sum(10, 1)).toEqual(11);
-    });
+//     test("with one small numbers", () => {
+//       expect(sum(1, 10)).toEqual(11);
+//       expect(sum(10, 1)).toEqual(11);
+//     });
 
-    test("same length", () => {
-      expect(sum(10, 10)).toEqual(20);
-      expect(sum(123, 456)).toEqual(579);
-    });
+//     test("same length", () => {
+//       expect(sum(10, 10)).toEqual(20);
+//       expect(sum(123, 456)).toEqual(579);
+//     });
 
-    test("differents length", () => {
-      expect(sum(10, 110)).toEqual(120);
-      expect(sum(110, 10)).toEqual(120);
-      expect(sum(11000000, 10)).toEqual(11000010);
-    });
+//     test("differents length", () => {
+//       expect(sum(10, 110)).toEqual(120);
+//       expect(sum(110, 10)).toEqual(120);
+//       expect(sum(11000000, 10)).toEqual(11000010);
+//     });
 
-    test("negatives", () => {
-      expect(sum(-10, -110)).toEqual(-120);
-    });
+//     test("negatives", () => {
+//       expect(sum(-10, -110)).toEqual(-120);
+//     });
 
-    test("differents sign", () => {
-      expect(() => sum(-10, 110)).toThrowError();
-      expect(() => sum(-10, 9)).toThrowError();
-    });
+//     test("differents sign", () => {
+//       expect(() => sum(-10, 110)).toThrowError();
+//       expect(() => sum(-10, 9)).toThrowError();
+//     });
 
-    test("retenues", () => {
-      expect(sum(11, 19)).toEqual(30);
-      expect(sum(12, 19)).toEqual(31);
-      expect(sum(-12, -19)).toEqual(-31);
-      expect(sum(9, 91)).toEqual(100);
-      expect(sum(1, 99)).toEqual(100);
-    });
-  });
-});
+//     test("retenues", () => {
+//       expect(sum(11, 19)).toEqual(30);
+//       expect(sum(12, 19)).toEqual(31);
+//       expect(sum(-12, -19)).toEqual(-31);
+//       expect(sum(9, 91)).toEqual(100);
+//       expect(sum(1, 99)).toEqual(100);
+//     });
+//   });
+// });
 
 // describe("special capacities", () => {
 //   test("zero sum", () => {

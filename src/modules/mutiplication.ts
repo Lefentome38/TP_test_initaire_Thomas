@@ -1,10 +1,3 @@
-export function addition(a: number, b: number){
-    if(a > 9 || a < 0 || b > 9 || b < 0){
-        throw new Error("Your are cheating !")
-    }
-    return a + b;  
-};
-
 export function sum_multiplication(a: number, b: number){
     let somme = 0
 
